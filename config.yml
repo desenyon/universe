@@ -1,0 +1,29 @@
+export:
+  compress_large_files: true
+  default_format: json
+  include_timestamps: true
+  template_dir: templates
+monitor:
+  alert_webhook: null
+  default_interval: 60
+  log_level: INFO
+  max_log_size: 10
+  retain_history_days: 30
+scan:
+  default_network: auto
+  default_ports: 1-1000
+  max_threads: 100
+  rate_limit: 1000
+  timeout: 30
+security:
+  alert_suspicious_ports: true
+  alert_unknown_devices: true
+  check_ssl_certs: true
+  compliance_level: basic
+  vulnerability_db_update: true
+ui:
+  default_mode: orbital
+  refresh_interval: 10
+  show_animations: true
+  sound_alerts: false
+  theme: cosmic
